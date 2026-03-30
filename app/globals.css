@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0A15;
+  --foreground: #ffffff;
+  --card: #1A1A2E;
+  --card-foreground: #ffffff;
+  --muted: #2A2A3E;
+  --muted-foreground: #555555;
+  --border: #2A2A3E;
+  --input: #0D0D1A;
+  --primary: #4FC3F7;
+  --primary-foreground: #000000;
+  --secondary: #81C784;
+  --secondary-foreground: #000000;
+  --accent: #F48FB1;
+  --destructive: #EF5350;
+  --radius: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: 'Nunito', 'Segoe UI', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 2px;
+}
+
+input, textarea, select {
+  color-scheme: dark;
+}
